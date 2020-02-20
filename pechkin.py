@@ -9,8 +9,8 @@ TOTO = "max-melifaro@ya.ru"
 FROM = "malepushka@mail.ru"
 pismo = "Русские буквыыыыыыыыыыы"
 username = FROM
-passmail = "Tishe4-ka"
-    
+passmail = "******"
+
 def esend():
     TOTO = pole1.get()
     SUBJECT = pole2.get()
@@ -31,10 +31,10 @@ root.title("Почтальон Печкин")
 # Вставить бы в поле text "Письмо отправлено программой "Почтальон Печкин", которую написал я."
 text = Text(width=40, height=18, font="Arial 14")
 text.pack(side=LEFT)
- 
+
 scroll = Scrollbar(command=text.yview)
 scroll.pack(side=LEFT, fill=Y)
- 
+
 text.config(yscrollcommand=scroll.set)
 
 l1 = Label(text="Куда: ", font="Arial 14")
@@ -51,4 +51,3 @@ pole2.pack()
 ButtonSend.pack()
 
 root.mainloop()
-
